@@ -1,0 +1,59 @@
+@model IEnumerable<FirstappMvc.Models.ClientMessage>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.userName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userEmaile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userTheme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userMessage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.userName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userEmaile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userTheme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userMessage)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

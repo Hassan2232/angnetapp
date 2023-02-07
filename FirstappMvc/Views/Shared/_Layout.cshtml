@@ -1,0 +1,20 @@
+﻿@{
+    Random rnd = new Random();
+}
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Firstapp</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles.css?@rnd.Next(1, 1000000)">
+    </head>
+    <body>    
+        @RenderBody()
+        <script src="runtime.js?@rnd.Next(1, 1000000)" type="module"></script>
+        <script src="polyfills.js?@rnd.Next(1, 1000000)" type="module"></script>
+        <script src="main.js?@rnd.Next(1, 1000000)" type="module"></script>
+    </body>
+</html>

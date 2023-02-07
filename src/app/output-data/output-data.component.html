@@ -1,0 +1,17 @@
+<section class="output-form">
+    <div class="component-labels">
+        <label class="component-label" for="username">Ваше имя:</label>
+        <label class="component-label" for="useremail">Ваш Email:</label>
+        <label class="component-label" for="userphone">Ваш телефон:</label>
+        <label class="component-label" for="usertheme">Тема:</label>
+        <label class="component-label" for="usermessage">Сообщение:</label>
+    </div>
+    <div class="component-items">
+        <p class="component-item">{{ clientInfo.userName }}</p>
+        <p class="component-item">{{ clientInfo.userEmaile }}</p>
+        <p class="component-item">{{ clientInfo.userPhone }}</p>
+        <p class="component-item">{{ clientInfo.userTheme }}</p>
+        <p class="component-item">{{ clientInfo.userMessage }}</p>
+    </div>
+    <button id="output-button" type="submit" (click)="oButt()">Вернуться назад</button>
+</section>

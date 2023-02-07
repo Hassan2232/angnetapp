@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\main.js",
+      "PackagePath": "staticwebassets\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\polyfills.js",
+      "PackagePath": "staticwebassets\\polyfills.js"
+    },
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\runtime.js",
+      "PackagePath": "staticwebassets\\runtime.js"
+    },
+    {
+      "Id": "C:\\Users\\HUAWEI\\Ujin_projects\\firstapp\\FirstappMvc\\wwwroot\\styles.css",
+      "PackagePath": "staticwebassets\\styles.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FirstappMvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FirstappMvc.props",
+      "PackagePath": "build\\FirstappMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FirstappMvc.props",
+      "PackagePath": "buildMultiTargeting\\FirstappMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FirstappMvc.props",
+      "PackagePath": "buildTransitive\\FirstappMvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,42 @@
+.output-form {
+    height: 100%;
+}
+
+.component-labels {
+    display: inline-block;
+    width: 30%;
+    vertical-align:top;
+    margin-right: 20px;
+}
+
+.component-label {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.component-label, .component-item {
+    display: inline-block;
+    width: 100%;
+}
+
+.component-items {
+    display: inline-block;
+    width: 60%;
+}
+
+.component-item {
+    margin: 0;
+    height: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#output-button {
+    width: 30%;
+    position: relative;
+    top: 15%;
+    left: 35%;
+    padding: 10px;
+}

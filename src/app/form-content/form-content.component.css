@@ -1,0 +1,66 @@
+.component-labels {
+    display: inline-block;
+    width: 30%;
+    vertical-align:top;
+    margin-right: 20px;
+}
+
+.component-items {
+    display: inline-block;
+    width: 60%;
+}
+
+.component-label, .component-item {
+    display: inline-block;
+    width: 100%;
+}
+
+.component-label {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.component-item {
+    height: 15px;
+    margin-bottom: 18px;
+}
+
+#usertheme {
+    height: 20px;
+    width: 265px;
+}
+
+#usermessage {
+    height: 40px;
+    width: 260px;
+    margin-bottom: 0px;
+    margin: 0;
+}
+
+label[for="usermessage"] {
+    margin-top: 15px;
+}
+
+#form-button {
+    width: 30%;
+    position: relative;
+    top: 4%;
+    left: 35%;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.main-form {
+    height: 100%;
+}
+
+.capcha-form {
+    width: 230px;
+    height: 60px;
+    border: 1px solid gray;
+    overflow: hidden;
+}

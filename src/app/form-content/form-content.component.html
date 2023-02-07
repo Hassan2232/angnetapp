@@ -1,0 +1,40 @@
+<form class="main-form" [formGroup]="data" (ngSubmit)="submitData()">
+    <div class="component-labels">
+        <label class="component-label" for="username">Ваше имя:</label>
+        <label class="component-label" for="useremail">Ваш Email:</label>
+        <label class="component-label" for="userphone">Ваш телефон:</label>
+        <label class="component-label" for="usertheme">Тема:</label>
+        <label class="component-label" for="usermessage">Сообщение:</label>
+        <label class="component-label" for="userchack">Проверка человечности:</label>
+    </div>
+    <div class="component-items">
+        <input id="username" class="component-item" type="text" formControlName="userName" 
+        [ngClass]="{ error: this.data.controls.userName.errors && (this.data.controls.userName.touched || submitFlag) }">
+
+        <input id="useremail" class="component-item" type="email" formControlName="userEmail"
+        [ngClass]="{error: this.data.controls.userEmail.errors && (this.data.controls.userEmail.touched || submitFlag)}">
+
+        <input id="userphone" class="component-item" type="text"  formControlName="userPhone" [specialCharacters]="[ '(', ')', '-' ]" prefix="+7" mask="(000)-000-00-00"
+        [ngClass]="{error: this.data.controls.userPhone.errors && (this.data.controls.userPhone.touched || submitFlag)}">
+
+        <select id="usertheme" class="component-item" formControlName="userTheme"
+        [ngClass]="{error: this.data.controls.userTheme.errors && (this.data.controls.userTheme.touched || submitFlag)}">
+            <option>Техподдержка</option>
+            <option>Продажи</option>    
+            <option>Закупки</option>
+            <option>Другое</option>
+        </select>
+
+        <textarea id="usermessage" class="component-item" rows="4" cols="33" formControlName="userMessage"
+        [ngClass]="{error: this.data.controls.userMessage.errors && (this.data.controls.userMessage.touched || submitFlag)}"></textarea>
+
+        <form [formGroup]="aFormGroup" class="capcha-form">
+            <ngx-recaptcha2 #captchaElem
+                [siteKey]="siteKey"
+                (success)="recaptchaSub()"
+                formControlName="recaptcha">
+            </ngx-recaptcha2>
+        </form>
+    </div>
+    <button id="form-button" type="submit">Отправить данные</button>
+</form>

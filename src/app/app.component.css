@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #c8c8c8;
+}
+
+.container {
+    width: 30%;
+    height: 50%;
+    position: relative;
+    top: 20%;
+    left: 35%;
+}
